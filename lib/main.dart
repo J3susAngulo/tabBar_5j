@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Pestaña Tab',
       theme: ThemeData(
         // This is the theme of your application.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
       home: MyHomePage(),
     );
@@ -36,11 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
             isScrollable: true,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.greenAccent), //Change background color from here
+                color: Colors.indigoAccent), //Change background color from here
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.tiktok)),
+              Tab(icon: Icon(Icons.search)),
+              Tab(icon: Icon(Icons.vpn_key)),
               Tab(icon: Icon(Icons.access_time_outlined)),
             ],
           ),
@@ -48,9 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
+            Icon(Icons.tiktok, size: 350),
+            Icon(Icons.search, size: 350),
+            Icon(Icons.vpn_key, size: 350),
             Icon(Icons.access_time_outlined, size: 350),
           ],
         ),
